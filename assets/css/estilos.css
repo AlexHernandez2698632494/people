@@ -1,0 +1,91 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fondo gris claro */
+    color: #333; /* Texto de color oscuro para mejorar la legibilidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff; /* Fondo blanco para los formularios */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1e3d59; /* Azul oscuro metálico para el título */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #1e3d59; /* Azul oscuro metálico para los bordes */
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #3a6179; /* Azul metálico más claro para el borde cuando se enfoca */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e3d59; /* Azul oscuro metálico para el botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a6179; /* Azul metálico más claro cuando el usuario pasa el ratón */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333; /* Color oscuro para el texto del enlace */
+}
+
+a {
+    color: #1e3d59; /* Azul oscuro metálico para los enlaces */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los errores */
+p.error {
+    color: #ff0000; /* Rojo para los errores */
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
